@@ -1,0 +1,20 @@
+{
+  "name": "svc-hello",
+  "version": "1.0.0",
+  "description": "test hello service",
+  "scripts": {
+    "deploy": "npx sls deploy",
+    "remove": "sls remove"
+  },
+  "dependencies": {
+    "@eceipt/lib-security": "workspace:*",
+    "aws-sdk": "^2.1209.0",
+    "serverless": "^3.22.0",
+    "serverless-bundle": "^5.5.0",
+    "serverless-plugin-monorepo": "^0.11.0"
+  },
+  "devDependencies": {
+    "@types/aws-lambda": "^8.10.102",
+    "@types/serverless": "^3.12.8"
+  }
+}

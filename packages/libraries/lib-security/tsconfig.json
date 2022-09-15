@@ -1,0 +1,19 @@
+{
+  "extends": "../../../tsconfig.packages.json",
+  "compilerOptions": {
+    "target": "es6" ,
+    "module": "commonjs" ,
+    "esModuleInterop": true ,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true ,
+    "skipLibCheck": true,
+    "rootDir": "src",
+    "outDir": "dist",
+    "tsBuildInfoFile": "dist/.tsbuildinfo",
+    "declaration": true,
+    "strictPropertyInitialization": false,
+    "sourceMap": false,
+    "typeRoots": ["./src/types", "../../../node_modules/@types"]
+  },
+  "exclude": ["dist", "node_modules"],
+}

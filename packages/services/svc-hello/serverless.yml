@@ -1,0 +1,22 @@
+service: hello-service
+plugins:
+  - serverless-bundle
+package:
+  individually: true
+frameworkVersion: '3'
+configValidationMode: error
+provider:
+  name: aws
+  stage: ${opt:stage, 'dev'}
+  region: eu-west-1
+  runtime: nodejs16.x
+functions:
+  hello:
+    handler: src/handlers/hello.handler
+    events:
+      - httpApi:
+          method: GET
+          path: /hello
+custom:
+  bundle:
+    packager: yarn

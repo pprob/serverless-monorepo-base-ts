@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "module": "commonjs",
+    "outDir": "build"
+  },
+  "exclude": [
+    "packages/services/*"
+  ],
+  "references": [
+    {
+      "path": "./packages/libraries/lib-security"
+    },
+    {
+      "path": "./packages/services/svc-hello"
+    }
+  ]
+}
